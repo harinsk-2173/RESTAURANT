@@ -1,0 +1,32 @@
+.container {
+    text-align: center;
+}
+
+#loginForm {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+.btn-primary {
+    margin-top: 10px;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}

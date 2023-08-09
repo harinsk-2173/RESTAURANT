@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="admin-style.css"> <!-- Custom admin styles -->
+</head>
+<body>
+
+    <!-- Admin Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Admin</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <h2>Hello, Admin!</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Add Offer</h5>
+                        <p class="card-text">Create a special offer .</p>
+                        <a href="#" class="btn btn-primary">Add Offer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Food Orders</h5>
+                        <p class="card-text">Manage the food orders.</p>
+                        <a href="manage-orders.html" class="btn btn-primary">Manage Orders</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Feedback Management</h5>
+                        <p class="card-text">Manage feedback and reviews.</p>
+                        <a href="manage-feedback.html" class="btn btn-primary">Manage Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <h4 id="add">Add New Dishes to Menu</h4>
+            <form id="addDishForm">
+                <div class="form-group">
+                    <label for="dishName" style="font: weight 300px;">Dish Name:</label>
+                    <input type="text" class="form-control" id="dishName" name="dishName" required>
+                </div>
+                <div class="form-group">
+                    <label for="dishImage">Dish Image URL:</label>
+                    <input type="url" class="form-control" id="dishImage" name="dishImage" required>
+                </div>
+                <div class="form-group">
+                    <label for="dishPrice">Dish Price:</label>
+                    <input type="number" step="0.01" class="form-control" id="dishPrice" name="dishPrice" required>
+                </div>
+                <button type="submit" class="btn btn-success">Add Dish</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
